@@ -18,11 +18,35 @@ class AppTheme {
   static const Color _white = Color(0XFFFFFFFF);
 
   ThemeData get light => ThemeData(
+        primaryColor: _primaryColor,
+        primaryColorDark: _secondaryColor,
+        canvasColor: _background,
+        cardColor: _primaryButton,
+        indicatorColor: _green,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,
           iconTheme: IconThemeData(
             color: _primaryColor,
+          ),
+        ),
+        textTheme: const TextTheme(
+          headline1: TextStyle(color: _primaryColor),
+          headline2: TextStyle(color: _primaryColor),
+          headline3: TextStyle(color: _primaryColor),
+          headline4: TextStyle(color: _primaryColor),
+          headline5: TextStyle(color: _primaryColor),
+          headline6: TextStyle(color: _primaryColor),
+          subtitle1: TextStyle(color: _primaryColor),
+          subtitle2: TextStyle(color: _primaryColor),
+          bodyText1: TextStyle(color: _primaryColor),
+          bodyText2: TextStyle(color: _primaryColor),
+        ),
+        textButtonTheme: TextButtonThemeData(
+          style: ButtonStyle(
+            textStyle: MaterialStateProperty.all(
+              const TextStyle(color: _secondaryColor),
+            ),
           ),
         ),
       );
