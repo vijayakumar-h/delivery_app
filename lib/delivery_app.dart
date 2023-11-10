@@ -6,13 +6,10 @@ class DeliveryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: const Column(
-        children: [
-          Text("Test",style: TextStyle(color: Colors.red),),
-          Icon(Icons.account_circle_outlined),
-        ],
-      ),
+      // appBar: AppBar(
+      //   automaticallyImplyLeading: false,
+      // ),
+      body: SplashScreen(),
     );
   }
 }
