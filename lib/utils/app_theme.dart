@@ -49,5 +49,26 @@ class AppTheme {
             ),
           ),
         ),
+        inputDecorationTheme: const InputDecorationTheme(
+          border: OutlineInputBorder(
+            borderSide: BorderSide(color: _border),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: _border),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Colors.red),
+          ),
+          disabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: _border),
+          ),
+          prefixIconColor: Colors.black,
+          filled: true,
+          hintStyle: TextStyle(
+            fontSize: 16,
+            color: _secondaryColor,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
       );
 }
