@@ -47,13 +47,16 @@ mixin _AppProductControllerMixin {
     ),
   };
   Set<Product> getProduct = {
-    Product(
-      1,
-      "Boston Lettuce",
-      AppIcons.carrot,
-      20.0,
-      false,
-      false,
+    ...List.generate(
+      10,
+      (index) => Product(
+        index,
+        "Boston Lettuce",
+        AppIcons.carrot,
+        20.0,
+        false,
+        false,
+      ),
     ),
   };
 }

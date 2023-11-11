@@ -48,7 +48,8 @@ class _DeliveryAppState extends State<DeliveryApp> {
               SizedBox(
                 height: 20,
               ),
-              CategoriesScreen(),
+              // CategoriesScreen(),
+              ProductScreen(),
             ],
           ),
         ),
