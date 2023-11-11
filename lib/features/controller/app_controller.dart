@@ -1,13 +1,13 @@
 import 'package:delivery_app/utils/common_exports.dart';
 
-class AppController with _CategoryControllerMixin {
+class AppController with _AppProductControllerMixin {
   factory AppController() => _singleton;
   static final AppController _singleton = AppController._internal();
 
   AppController._internal();
 }
 
-mixin _CategoryControllerMixin {
+mixin _AppProductControllerMixin {
   Set<Category> getCategory = {
     Category(
       1,
@@ -44,6 +44,16 @@ mixin _CategoryControllerMixin {
       AppIcons.drinks,
       "Drinks",
       "(25)",
+    ),
+  };
+  Set<Product> getProduct = {
+    Product(
+      1,
+      "Boston Lettuce",
+      AppIcons.carrot,
+      20.0,
+      false,
+      false,
     ),
   };
 }

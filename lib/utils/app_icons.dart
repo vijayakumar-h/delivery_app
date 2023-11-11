@@ -4,6 +4,7 @@ class AppIcons {
   static const String bread = "assets/images/bread.png";
   static const String drinks = "assets/images/drinks.png";
   static const String sweets = "assets/images/sweets.png";
+  static const String carrot = "assets/images/carrot.png";
   static const String fruits = "assets/images/fruites.png";
   static const String vegetables = "assets/images/vegetables.png";
 }
