@@ -30,7 +30,7 @@ class SplashScreen extends StatelessWidget {
                 radius: 40,
                 backgroundColor: const Color(0XFFCDFFB6),
                 child: Image.asset(
-                  "assets/images/d-50.png",
+                  AppIcons.dIcon,
                   color: const Color(0XFF8C33FF),
                 ),
               ),
