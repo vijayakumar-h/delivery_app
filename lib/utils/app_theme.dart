@@ -23,6 +23,7 @@ class AppTheme {
         canvasColor: _background,
         cardColor: _primaryButton,
         indicatorColor: _green,
+        highlightColor: _border,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,
