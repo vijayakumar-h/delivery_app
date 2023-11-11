@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:delivery_app/utils/common_exports.dart';
 
 class SplashScreen extends StatelessWidget {
