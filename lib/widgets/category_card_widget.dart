@@ -20,7 +20,7 @@ class CategoryCardWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 140,
+            height: 114,
             width: 180,
             child: DecoratedBox(
               decoration: BoxDecoration(
@@ -37,7 +37,7 @@ class CategoryCardWidget extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(4.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -48,7 +48,7 @@ class CategoryCardWidget extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: 4),
                 Text(
                   category.productCode,
                   style: TextStyle(
