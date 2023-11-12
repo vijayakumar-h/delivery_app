@@ -24,6 +24,7 @@ class AppTheme {
         cardColor: _primaryButton,
         indicatorColor: _green,
         highlightColor: _border,
+        shadowColor: _selectedViolet,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,
