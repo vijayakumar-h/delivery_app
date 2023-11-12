@@ -36,6 +36,7 @@ class ProductCardWidget extends StatelessWidget {
             width: MediaQuery.of(context).size.width / 2.3,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   product.productName,
