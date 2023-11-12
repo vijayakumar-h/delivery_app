@@ -12,27 +12,31 @@ class SearchTextBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(
-        enabledBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(28),
+    return SizedBox(
+      height: 48,
+      child: TextField(
+        decoration: InputDecoration(
+          enabledBorder: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(28),
+            ),
           ),
-        ),
-        errorBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(28),
+          errorBorder: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(28),
+            ),
           ),
-        ),
-        focusedBorder: const OutlineInputBorder(
-          borderRadius: BorderRadius.all(
-            Radius.circular(28),
+          focusedBorder: const OutlineInputBorder(
+            borderRadius: BorderRadius.all(
+              Radius.circular(28),
+            ),
           ),
-        ),
-        hintText: placeHolder,
-        prefixIcon: Icon(
-          icon,
-          size: 28,
+          hintText: placeHolder,
+          hintStyle: const TextStyle(fontSize: 16),
+          prefixIcon: Icon(
+            icon,
+            size: 24,
+          ),
         ),
       ),
     );
