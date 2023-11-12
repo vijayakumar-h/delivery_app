@@ -5,6 +5,8 @@ class AppController with _AppProductControllerMixin {
   static final AppController _singleton = AppController._internal();
 
   AppController._internal();
+
+  final ValueNotifier<int> currentIndex = ValueNotifier<int>(0);
 }
 
 mixin _AppProductControllerMixin {
