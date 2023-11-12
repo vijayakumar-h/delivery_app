@@ -1,3 +1,4 @@
+import 'package:delivery_app/app_bottom_navigation_bar.dart';
 import 'package:delivery_app/utils/common_exports.dart';
 
 final appController = AppController();
@@ -25,33 +26,17 @@ class _DeliveryAppState extends State<DeliveryApp> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: true,
-      ),
-      body: const Padding(
-        padding: EdgeInsets.all(16),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Text(
-                "Categories",
-                style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-              SearchTextBarWidget(
-                placeHolder: 'Search',
-                icon: Icons.search,
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              // CategoriesScreen(),
-              ProductScreen(),
-            ],
-          ),
+    return Material(
+      child: Scaffold(
+        appBar: AppBar(automaticallyImplyLeading: true),
+        bottomNavigationBar: const AppBottomNavigationBar(),
+        body: ValueListenableBuilder(
+          valueListenable: appController.currentIndex,
+          builder: (_, index, __) => [
+            const CategoriesScreen(),
+            const SizedBox.shrink(),
+            const SizedBox.shrink(),
+          ][index],
         ),
       ),
     );
