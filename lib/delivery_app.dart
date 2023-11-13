@@ -1,4 +1,3 @@
-import 'package:delivery_app/app_bottom_navigation_bar.dart';
 import 'package:delivery_app/utils/common_exports.dart';
 
 final appController = AppController();
@@ -26,19 +25,17 @@ class _DeliveryAppState extends State<DeliveryApp> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Scaffold(
-        appBar: AppBar(automaticallyImplyLeading: false),
-        bottomNavigationBar: const AppBottomNavigationBar(),
-        body: ValueListenableBuilder(
-          valueListenable: appController.currentIndex,
-          builder: (_, index, __) => [
-            const CategoriesScreen(),
-            const SizedBox.shrink(),
-            const SizedBox.shrink(),
-          ][index],
-        ),
+    return Scaffold(
+      bottomNavigationBar: const AppBottomNavigationBar(),
+      body: ValueListenableBuilder(
+        valueListenable: appController.currentIndex,
+        builder: (_, index, __) => [
+          const CategoriesScreen(),
+          const PaymentCheckoutScreen(),
+          const SizedBox.shrink(),
+        ][index],
       ),
     );
   }
 }
+
