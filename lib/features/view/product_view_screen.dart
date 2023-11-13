@@ -22,6 +22,19 @@ class ProductViewScreen extends StatelessWidget {
       borderRadius: const BorderRadius.all(Radius.circular(20)),
       child: Stack(
         children: [
+          Positioned(
+            top: 60,
+            left:16,
+            child: GestureDetector(
+              onTap: (){
+                Navigator.pop(context);
+              },
+              child: const Icon(
+                Icons.arrow_back_ios_new_outlined,
+                color: Colors.black,
+              ),
+            ),
+          ),
           ValueListenableBuilder(
             valueListenable: currentPage,
             builder: (context, newValue, child) {

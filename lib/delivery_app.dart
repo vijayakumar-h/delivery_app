@@ -28,7 +28,7 @@ class _DeliveryAppState extends State<DeliveryApp> {
   Widget build(BuildContext context) {
     return Material(
       child: Scaffold(
-        appBar: AppBar(automaticallyImplyLeading: true),
+        appBar: AppBar(automaticallyImplyLeading: false),
         bottomNavigationBar: const AppBottomNavigationBar(),
         body: ValueListenableBuilder(
           valueListenable: appController.currentIndex,
