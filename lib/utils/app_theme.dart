@@ -27,6 +27,10 @@ class AppTheme {
         shadowColor: _selectedViolet,
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
+          titleTextStyle: TextStyle(
+            color: _primaryColor,
+            fontSize: 16,
+          ),
           elevation: 0,
           iconTheme: IconThemeData(
             color: _primaryColor,
