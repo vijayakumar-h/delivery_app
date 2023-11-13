@@ -27,9 +27,9 @@ class ProductScreen extends StatelessWidget {
                 icon: Icons.search,
               ),
               const SizedBox(height: 20),
-            ...appController.getProduct.map(
-            (e) => ProductCardWidget(product: e),
-            ),
+              ...appController.getProduct.map(
+                (e) => ProductCardWidget(product: e),
+              ),
             ],
           ),
         ),
