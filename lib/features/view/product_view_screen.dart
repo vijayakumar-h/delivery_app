@@ -1,5 +1,4 @@
 import 'package:delivery_app/utils/common_exports.dart';
-import 'package:delivery_app/widgets/page_indicator_widget.dart';
 
 class ProductViewScreen extends StatelessWidget {
   final Product product;
@@ -24,9 +23,9 @@ class ProductViewScreen extends StatelessWidget {
         children: [
           Positioned(
             top: 60,
-            left:16,
+            left: 16,
             child: GestureDetector(
-              onTap: (){
+              onTap: () {
                 Navigator.pop(context);
               },
               child: const Icon(
