@@ -10,4 +10,5 @@ export 'package:delivery_app/features/view/product_screen.dart';
 export 'package:delivery_app/services/navigation_services.dart';
 export 'package:delivery_app/widgets/search_text_bar_widget.dart';
 export 'package:delivery_app/features/view/categories_screen.dart';
+export 'package:delivery_app/features/view/product_view_screen.dart';
 export 'package:delivery_app/features/controller/app_controller.dart';
