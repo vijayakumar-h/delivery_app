@@ -49,7 +49,7 @@ class ProductViewScreen extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Theme.of(context)
                                 .primaryColorDark
-                                .withOpacity(0.3),
+                                .withValues(alpha: 0.3),
                           ),
                           child: Image.asset(icon[index]),
                         );

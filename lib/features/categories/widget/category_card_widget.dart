@@ -34,7 +34,7 @@ class CategoryCardWidget extends StatelessWidget {
               width: 180,
               child: DecoratedBox(
                 decoration: BoxDecoration(
-                  color: Theme.of(context).primaryColorDark.withOpacity(0.3),
+                  color: Theme.of(context).primaryColorDark.withValues(alpha: 0.3),
                   borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(8),
                     topRight: Radius.circular(8),

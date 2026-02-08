@@ -29,7 +29,7 @@ class ProductCardWidget extends StatelessWidget {
                   border: Border.all(
                     color: Theme.of(context).highlightColor,
                   ),
-                  color: Theme.of(context).primaryColorDark.withOpacity(0.3),
+                  color: Theme.of(context).primaryColorDark.withValues(alpha: 0.3),
                 ),
                 child: Image.asset(
                   product.productImage,
