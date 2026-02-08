@@ -1,5 +1,7 @@
 import 'package:delivery_app/utils/common_exports.dart';
 
+final appController = AppController();
+
 Gradient get gradient => LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
