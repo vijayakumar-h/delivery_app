@@ -1,5 +1,5 @@
 export 'package:flutter/material.dart';
-export 'package:delivery_app/delivery_app.dart';
+export 'package:delivery_app/home.dart';
 export 'package:delivery_app/model/product.dart';
 export 'package:delivery_app/initialize_app.dart';
 export 'package:delivery_app/model/category.dart';
@@ -18,6 +18,7 @@ export 'package:delivery_app/widgets/app_bottom_navigation_bar.dart';
 export 'package:delivery_app/features/categories/product_screen.dart';
 export 'package:delivery_app/features/cart_payment/payment_method.dart';
 export 'package:delivery_app/features/authentication/login_screen.dart';
+export 'package:delivery_app/features/painter/custom_wave_painter.dart';
 export 'package:delivery_app/features/categories/categories_screen.dart';
 export 'package:delivery_app/features/authentication/sing_up_screen.dart';
 export 'package:delivery_app/features/categories/product_view_screen.dart';
@@ -28,6 +29,5 @@ export 'package:delivery_app/features/categories/widget/product_card_widget.dart
 export 'package:delivery_app/features/categories/widget/category_card_widget.dart';
 export 'package:delivery_app/features/cart_payment/widget/checkout_title_widget.dart';
 export 'package:delivery_app/features/authentication/widgets/login_option_widget.dart';
-export 'package:delivery_app/features/authentication/widgets/custom_wave_painter.dart';
 export 'package:delivery_app/features/authentication/widgets/social_media_section_widget.dart';
 export 'package:delivery_app/features/authentication/widgets/login_and_sign_up_screen_title_widget.dart';

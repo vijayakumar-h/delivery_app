@@ -18,32 +18,34 @@ class PrimaryButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SizedBox(
-    width: isExpand ? double.infinity : null,
-    child: ElevatedButton(
-      style: OutlinedButton.styleFrom(
-        // backgroundColor: context.primaryColor.withValues(alpha: 0.5),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(borderRadius ?? kAppBorderRadius),
-        ),
-      ),
-      onPressed: onTap,
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            title,
-            style: const TextStyle(
-              fontSize: 18.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
+        height: 48,
+        width: isExpand ? double.infinity : null,
+        child: ElevatedButton(
+          style: OutlinedButton.styleFrom(
+            backgroundColor: context.primaryColor.withValues(alpha: 0.5),
+            shape: RoundedRectangleBorder(
+              borderRadius:
+                  BorderRadius.circular(borderRadius ?? kAppBorderRadius),
             ),
           ),
-          SizedBox(width: kAppPadding - 8),
-          if (prefixIcon != null) ...{
-            Icon(prefixIcon, size: 24, color: Colors.white),
-          },
-        ],
-      ),
-    ),
-  );
+          onPressed: onTap,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                title,
+                style: const TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(width: kAppPadding - 8),
+              if (prefixIcon != null) ...{
+                Icon(prefixIcon, size: 24, color: Colors.white),
+              },
+            ],
+          ),
+        ),
+      );
 }

@@ -15,7 +15,7 @@ class _InitializeAppState extends State<InitializeApp> {
       Future.delayed(Duration(milliseconds: 800), () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Home()),
+          MaterialPageRoute(builder: (context) => LoginScreen()),
         );
       });
     });

@@ -12,8 +12,8 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     bool isVisible = false;
     Widget? visibleIcon() => Icon(
-      isVisible ? Icons.visibility_outlined : Icons.visibility_off_outlined,
-    );
+          isVisible ? Icons.visibility_outlined : Icons.visibility_off_outlined,
+        );
     final List<Map<String, dynamic>> loginInputList = [
       {
         'title': 'Email',
@@ -47,17 +47,21 @@ class _LoginScreenState extends State<LoginScreen> {
         },
       },
     ];
-    return Material(
-      child: CustomPaint(
-        painter: const WavePainter(showSecondWave: false),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Login',
+          style: TextStyle(
+            fontSize: 28,
+            fontWeight: FontWeight.w600,
+          ),
+        ),
+        automaticallyImplyLeading: false,
+      ),
+      body: Material(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const SizedBox(height: kToolbarHeight*1.2),
-            const LoginAndSignUpScreenTitleWidget(
-              subTitle: 'Login',
-              title: 'Welcome Back!',
-            ),
             const SizedBox(height: kToolbarHeight),
             ...loginInputList.map(
               (input) => Padding(
@@ -87,21 +91,26 @@ class _LoginScreenState extends State<LoginScreen> {
             Align(
               alignment: Alignment.bottomRight,
               child: Padding(
-                padding:  EdgeInsets.only(right:kAppPadding),
+                padding: EdgeInsets.only(right: kAppPadding),
                 child: AppTextButton(title: 'Forgot Password?', onTap: () {}),
               ),
             ),
             SizedBox(height: kAppPadding),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: kAppPadding),
-              child: PrimaryButton(title: 'Sign in', onTap: () {}),
+              child: PrimaryButton(
+                title: 'Sign in',
+                onTap: () => context.push(
+                  Home(),
+                ),
+              ),
             ),
             SizedBox(height: kAppPadding),
             const SocialMediaSectionWidget(),
             LoginOptionWidget(
               subTitle: 'Sing Up',
               title: 'Don\'t have an Account ?',
-              onTap: () {},
+              onTap: () => context.push(SingUpScreen()),
             ),
           ],
         ),
